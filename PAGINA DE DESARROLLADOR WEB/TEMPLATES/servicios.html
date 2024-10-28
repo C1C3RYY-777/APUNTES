@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section id="servicios">
+    <div class="container">
+        <center>
+            <h2>Nuestros Servicios</h2>
+        </center>
+        <hr>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{url_for('static',filename='imagenes/python.jpg')}}" height="200" width="200"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <hr>
+                        <div class="accordion accordion-flush" id="accordion1">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button custom-color" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Tutorías Personalizadas de Python:
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordion1">
+                                    <div class="accordion-body">
+                                        <p>¿Interesado en aprender el lenguaje de programación Python? En CodeCrafters,
+                                            ofrecemos tutorías
+                                            personalizadas diseñadas para ayudarte a dominar Python, ya sea que seas un
+                                            principiante
+                                            absoluto
+                                            o un desarrollador experimentado que busca perfeccionar sus habilidades.
+                                            Nuestro enfoque de
+                                            enseñanza se adapta a tu nivel de experiencia y objetivos individuales.
+                                            Desde los conceptos
+                                            básicos de Python hasta temas más avanzados como desarrollo web, ciencia de
+                                            datos y
+                                            automatización, nuestro equipo de instructores expertos está aquí para
+                                            guiarte en tu viaje de
+                                            aprendizaje. Con sesiones flexibles y personalizadas según tu horario,
+                                            puedes aprender a tu
+                                            propio
+                                            ritmo y según tu conveniencia. ¡Empieza a dominar Python hoy mismo
+                                            reservando una sesión de
+                                            tutoría personalizada con nosotros!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{url_for('static',filename='imagenes/Desarrollo.jpg')}}" height="200" width="200"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <hr>
+                        <div class="accordion accordion-flush" id="accordion2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button custom-color" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Desarrollo Web a Pedido:
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordion2">
+                                    <div class="accordion-body">
+                                        <p>¿Necesitas un sitio web para tu negocio o proyecto personal? ¡Nosotros lo
+                                            hacemos realidad! En
+                                            CodeCrafters,
+                                            ofrecemos servicios de desarrollo web a medida según tus especificaciones.
+                                            Desde sitios web
+                                            estáticos y dinámicos hasta tiendas en línea y aplicaciones web,
+                                            nuestro equipo de desarrolladores talentosos trabajará contigo
+                                            para crear un sitio web que se adapte perfectamente a tus necesidades y
+                                            objetivos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{url_for('static',filename='imagenes/tutorias.jpg')}}" height="200" width="200"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <hr>
+                        <div class="accordion accordion-flush" id="accordion3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button custom-color" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Tutorías html y css
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordion3">
+                                    <div class="accordion-body">
+                                        <p>¿¿Quieres aprender HTML y CSS desde cero o mejorar tus habilidades actuales?
+                                            Nuestras tutorías
+                                            personalizadas están diseñadas para adaptarse
+                                            a tu nivel de experiencia y objetivos individuales.
+                                            Desde los conceptos básicos de HTML hasta técnicas avanzadas de CSS,
+                                            nuestros instructores
+                                            expertos te proporcionarán el conocimiento y la orientación necesarios para
+                                            llevar tus
+                                            habilidades al siguiente nivel.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

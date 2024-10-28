@@ -1,0 +1,329 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<br>
+
+<section id="logo">
+  <div class="container">
+    <div class="row">
+      <center>
+        <h2>¡Bienvenido a Mi Sitio Webeeee!</h2>
+      </center>
+      <br>
+      <hr>
+      <br>
+
+      <center><img src="{{ url_for('static',filename='imagenes/logo.png') }}" width="1000" height="400" alt="" class="animar-imagen"></center>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+<br>
+
+<!--introduccion-->
+<section id="introduccion">
+  <div class="container">
+    <div class="row">
+      <center>
+        <p>
+        <h5>
+          ¡Bienvenido a CodeCrafters!
+          <br>
+          <br>
+          En CodeCrafters, combinamos la creatividad del diseño web con la potencia de la programación en Python y
+          HTML
+          para ofrecerte soluciones digitales innovadoras y a medida. Somos una comunidad apasionada de
+          desarrolladores
+          web que se esfuerzan por llevar tus ideas desde la concepción hasta la realidad digital.
+          Nuestro equipo de expertos en desarrollo web utiliza las últimas tecnologías y prácticas de codificación
+          para
+          crear sitios web dinámicos, aplicaciones interactivas y experiencias en línea cautivadoras. Desde pequeñas
+          empresas hasta grandes corporaciones, estamos aquí para ayudarte a destacar en el competitivo mundo digital.
+          Explora nuestro portafolio y descubre cómo podemos ayudarte a alcanzar tus objetivos en línea. Únete a
+          nosotros en el viaje hacia la excelencia digital. ¡Bienvenido a CodeCrafters, donde la creatividad y la
+          codificación se fusionan!
+        </h5>
+        </p>
+      </center>
+    </div>
+  </div>
+  </div>
+</section>
+<br>
+<br>
+<br>
+
+<div class="container">
+  <center>
+    <h2 id="sobrenosotros">SOBRE NOSOTROS</h2>
+  </center>
+  <hr>
+</div>
+
+
+
+<section id="INICIO">
+  <div class="row">
+    <div class="container">
+
+      
+      <div class="content">
+        <div class="image">
+          <div class="contenedor">
+            <a href="#">
+              <figure id="imagenes">
+                <img src="{{ url_for('static',filename='imagenes/equipoo.jpg' )}}"   >
+                <div class="capa">
+                  <h3>Nuestro equipo</h3>
+                  <p>Nuestro equipo está compuesto por desarrolladores talentosos y experimentados en diseño, desarrollo
+                    frontend y backend, y optimización SEO. Nos enfocamos en calidad e innovación en cada proyecto.</p>
+                </div>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="content">
+        <div class="image">
+          <div class="contenedor">
+            <a href="#">
+              <figure>
+                <img src="{{url_for('static',filename='imagenes/lenguajes.jpg')}}" >
+                <div class="capa">
+                  <h3>Habilidades</h3>
+                  <p>Nos especializamos en HTML y CSS, creando estructuras web sólidas y accesibles, así como diseños
+                    impresionantes y responsivos, asegurando una perfecta adaptación en cualquier dispositivo..</p>
+                </div>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="image">
+          <div class="contenedor">
+            <a href="#">
+              <figure>
+                <img src="{{url_for('static',filename='imagenes/equipocom.jpg')}}" >
+                <div class="capa">
+                  <h3>Tutorias</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, vero! (no se que poner)</p>
+                </div>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+</section>
+
+
+</div>
+</section>
+<!--servicios-->
+<section id="servicios">
+  <div class="container">
+    <center>
+      <h2>Nuestros Servicios</h2>
+    </center>
+    <hr>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="{{url_for('static',filename='imagenes/python.jpg')}}" height="200" width="200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <hr>
+            <div class="accordion accordion-flush" id="accordion1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button custom-color" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Tutorías Personalizadas de Python:
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                  <div class="accordion-body">
+                    <p>¿Interesado en aprender el lenguaje de programación Python? En CodeCrafters, ofrecemos tutorías
+                      personalizadas diseñadas para ayudarte a dominar Python, ya sea que seas un principiante
+                      absoluto
+                      o un desarrollador experimentado que busca perfeccionar sus habilidades. Nuestro enfoque de
+                      enseñanza se adapta a tu nivel de experiencia y objetivos individuales. Desde los conceptos
+                      básicos de Python hasta temas más avanzados como desarrollo web, ciencia de datos y
+                      automatización, nuestro equipo de instructores expertos está aquí para guiarte en tu viaje de
+                      aprendizaje. Con sesiones flexibles y personalizadas según tu horario, puedes aprender a tu
+                      propio
+                      ritmo y según tu conveniencia. ¡Empieza a dominar Python hoy mismo reservando una sesión de
+                      tutoría personalizada con nosotros!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="{{url_for('static',filename='imagenes/Desarrollo.jpg')}}"height="200" width="200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <hr>
+            <div class="accordion accordion-flush" id="accordion2">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button custom-color" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Desarrollo Web a Pedido:
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                  <div class="accordion-body">
+                    <p>¿Necesitas un sitio web para tu negocio o proyecto personal? ¡Nosotros lo hacemos realidad! En
+                      CodeCrafters,
+                      ofrecemos servicios de desarrollo web a medida según tus especificaciones. Desde sitios web
+                      estáticos y dinámicos hasta tiendas en línea y aplicaciones web,
+                      nuestro equipo de desarrolladores talentosos trabajará contigo
+                      para crear un sitio web que se adapte perfectamente a tus necesidades y objetivos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="{{url_for('static',filename='imagenes/tutorias.jpg')}}"height="200" width="200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <hr>
+            <div class="accordion accordion-flush" id="accordion3">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button custom-color" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Tutorías html y css
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion3">
+                  <div class="accordion-body">
+                    <p>¿¿Quieres aprender HTML y CSS desde cero o mejorar tus habilidades actuales? Nuestras tutorías
+                      personalizadas están diseñadas para adaptarse
+                      a tu nivel de experiencia y objetivos individuales.
+                      Desde los conceptos básicos de HTML hasta técnicas avanzadas de CSS, nuestros instructores
+                      expertos te proporcionarán el conocimiento y la orientación necesarios para llevar tus
+                      habilidades al siguiente nivel.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<center>
+  <h2>Nuestro Portafolio</h2>
+</center>
+<div class="container">
+  <br>
+  <hr>
+</div>
+
+<section id="portafolio">
+
+  <div class="container">
+
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="{{url_for('static',filename='imagenes/codigo.png')}}"class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 id="titulo-carrousel">First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="{{url_for('static',filename='imagenes/cap.png')}}" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{url_for('static',filename='imagenes/')}}" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  </div>
+
+</section>
+
+
+<section id="ubicacion-contacto">
+  <div class="container">
+    <h2>Ubicación y Contacto</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Ubicación</h3>
+        <p>Carrera 71D # 54 25 Sur</p>
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3976.4752608231584!2d-74.08009652408732!3d4.687161195287798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1717359074227!5m2!1ses-419!2sco"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </iframe>
+        </div>
+      </div>
+      <!-- Información de Contacto -->
+      <div class="col-md-6">
+        <h3>Contacto</h3>
+        <br><br>
+        <div class="contacto-info">
+          <p>Email:juanangelsanchez980@gmail.com</p>
+          <p>Teléfono: 3209581988</p>
+        </div>
+      </div>
+      </body>
+
+      </html>
+      {% endblock %}
